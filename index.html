@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/jpg" href="cv.png"/>
+	<title>@jay.game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	td{
+  		height: 100px;width: 100px;text-align: center;border:5px solid orange;font-size: 40px;
+  	}
+  	.df{
+
+height: 100px;width: 100px;background-color: white;
+  	}
+  </style>
+</head>
+<body>
+
+   
+ <div class="container" style="height: auto;background-color: yellow;margin: 0 100px 0 100px;font-weight: bold;"><span style="">@jay </span>
+	<div style="font-size: 30px;color: blue;text-align: center;padding-top: 20px;"><p id="mk">Hello</p> Welcome to Tic Tac Toe!!!</div>
+	<button onclick="yu()" style="margin-left: 140px;font-size: 25px;margin-top: 30px;background-color: orange;border-radius: 20px;">Restart</button>
+</div>
+ 
+
+
+
+
+<div style="text-align: center;font-weight: bold;"><h2 id="gh" style="color: blue;">Rules</h2>
+<p>On Single Click It will become 'X'</p>
+<p>On Double Click It will become 'O'</p>
+</div>
+
+
+<table align="center" >
+	<tr>
+		<td><button id="a1" onclick="abc()" class="df" >*</button></td>
+		<td><button id="a2" onclick="abc() " class="df" >*</button></td>
+		<td><button id="a3" onclick=" abc()" class="df" >*</button></td>
+	</tr>
+	<tr>
+		<td><button id="a4" onclick="abc() " class="df" >*</button></td>
+		<td><button id="a5" onclick=" abc()" class="df" >*</button></td>
+		<td><button id="a6" onclick=" abc()" class="df" >*</button></td>
+	</tr>
+	<tr>
+		<td><button id="a7" onclick="abc() " class="df" >*</button></td>
+		<td><button id="a8" onclick="abc() " class="df" >*</button></td>
+		<td><button id="a9" onclick="abc() " class="df" >*</button></td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+  <script> 
+
+
+function yu()
+{
+	var aa=document.getElementById("a1")
+	var ac=document.getElementById("a2")
+	var ad=document.getElementById("a3")
+	var ae=document.getElementById("a4")
+	var af=document.getElementById("a5")
+	var ag=document.getElementById("a6")
+	var ah=document.getElementById("a7")
+	var ai=document.getElementById("a8")
+    var ab=document.getElementById("a9")
+
+	aa.textContent="*"
+	ab.textContent="*"
+	ac.textContent="*"
+	ad.textContent="*"
+	ae.textContent="*"
+	af.textContent="*"
+	ag.textContent="*"
+	ah.textContent="*"
+	ai.textContent="*"
+
+}
+
+
+
+function abc()
+{   
+	var aa1=document.getElementById("a1")
+	var ac2=document.getElementById("a2")
+	var ad3=document.getElementById("a3")
+	var ae4=document.getElementById("a4")
+	var af5=document.getElementById("a5")
+	var ag6=document.getElementById("a6")
+	var ah7=document.getElementById("a7")
+	var ai8=document.getElementById("a8")
+    var ab9=document.getElementById("a9")
+
+	    aa1.addEventListener("click",function () {
+		aa1.textContent='X'})
+		aa1.addEventListener("dblclick",function () {
+		aa1.textContent='O'})
+
+		  ac2.addEventListener("click",function () {
+		ac2.textContent='X'})
+		ac2.addEventListener("dblclick",function () {
+		ac2.textContent='O'})
+
+		  ab9.addEventListener("click",function () {
+		ab9.textContent='X'})
+		ab9.addEventListener("dblclick",function () {
+		ab9.textContent='O'})
+
+		  ad3.addEventListener("click",function () {
+		ad3.textContent='X'})
+		ad3.addEventListener("dblclick",function () {
+		ad3.textContent='O'})
+
+		  ae4.addEventListener("click",function () {
+		ae4.textContent='X'})
+		ae4.addEventListener("dblclick",function () {
+		ae4.textContent='O'})
+
+		  af5.addEventListener("click",function () {
+		af5.textContent='X'})
+		af5.addEventListener("dblclick",function () {
+		af5.textContent='O'})
+
+		  ag6.addEventListener("click",function () {
+		ag6.textContent='X'})
+		ag6.addEventListener("dblclick",function () {
+		ag6.textContent='O'})
+
+		  ah7.addEventListener("click",function () {
+		ah7.textContent='X'})
+		ah7.addEventListener("dblclick",function () {
+		ah7.textContent='O'})
+
+		  ai8.addEventListener("click",function () {
+		ai8.textContent='X'})
+		ai8.addEventListener("dblclick",function () {
+		ai8.textContent='O'
+	})
+}
+
+
+
+
+
+
+
+
+
+/********************   random color generator  ****************************/
+
+
+var ac=document.getElementById("gh")
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function changeHeaderColor() {
+  colorw=getRandomColor() 
+        ac.style.color =colorw;
+}
+
+setInterval("changeHeaderColor()",500);
+
+
+var nm=prompt("Enter Your Name")
+document.getElementById('mk').textContent="Hello "+ nm
+
+
+  </script>
+</body>
+</html>
