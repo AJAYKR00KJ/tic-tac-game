@@ -75,15 +75,15 @@ function yu()
 	var ai=document.getElementById("a8")
     var ab=document.getElementById("a9")
 
-	aa.textContent="*"
-	ab.textContent="*"
-	ac.textContent="*"
-	ad.textContent="*"
-	ae.textContent="*"
-	af.textContent="*"
-	ag.textContent="*"
-	ah.textContent="*"
-	ai.textContent="*"
+	aa.textContent="#"
+	ab.textContent="#"
+	ac.textContent="#"
+	ad.textContent="#"
+	ae.textContent="#"
+	af.textContent="#"
+	ag.textContent="#"
+	ah.textContent="#"
+	ai.textContent="#"
 
 }
 
@@ -164,7 +164,7 @@ var ac=document.getElementById("gh")
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
-  for (var i = 0; i < 6; i++) {
+  for (var j = 0; j < 6; j++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
@@ -177,7 +177,7 @@ function changeHeaderColor() {
 setInterval("changeHeaderColor()",500);
 
 
-var nm=prompt("Enter Your Name")
+var nm=prompt("Enter Your Full Name")
 document.getElementById('mk').textContent="Hello "+ nm
 
 
