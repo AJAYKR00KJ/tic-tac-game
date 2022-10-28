@@ -9,3 +9,9 @@ This is a basic tic tac toe game made with Vanilla JS,CSS3 and HTML5.
 
 
 This is an interactive fun game.
+
+
+# New Features!
+
+  - Improved UI
+  - Added dark mode
